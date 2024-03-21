@@ -115,7 +115,56 @@
  SELECT column1, column2 FROM table_name WHERE NOT condition;
  ```
 
-This cheat sheet provides a quick reference for SQL commands and their syntax, covering a wide range of operations from basic data manipulation to more complex queries and database management tasks.
+## Sorting Data
+
+- **Order By Ascending**: Sorts the result set in ascending order.
+```sql
+SELECT column1, column2 FROM table_name ORDER BY column1 ASC;
+```
+- **Order By Descending**: Sorts the result set in descending order.
+```sql
+SELECT column1, column2 FROM table_name ORDER BY column1 DESC;
+```
+- **Order By Multiple Columns**: Sorts the result set by multiple columns.
+```sql
+SELECT column1, column2 FROM table_name ORDER BY column1 ASC, column2 DESC;
+```
+
+## Filtering Data
+
+- **Filtering on Numeric Columns**: Filters rows based on numeric conditions.
+```sql
+SELECT * FROM table_name WHERE column_name >= 3;
+```
+- **Filtering on Text Columns**: Filters rows based on text conditions.
+```sql
+SELECT * FROM table_name WHERE column_name = 'value';
+```
+- **Filtering with LIKE**: Filters rows based on pattern matching.
+```sql
+SELECT * FROM table_name WHERE column_name LIKE 'pattern%';
+```
+- **Filtering with IN**: Filters rows where a column's value is in a list of values.
+```sql
+SELECT * FROM table_name WHERE column_name IN ('value1', 'value2');
+```
+- **Filtering with BETWEEN**: Filters rows where a column's value is within a range.
+```sql
+SELECT * FROM table_name WHERE column_name BETWEEN value1 AND value2;
+```
+- **Filtering with NULL**: Filters rows where a column's value is NULL or not NULL.
+```sql
+SELECT * FROM table_name WHERE column_name IS NULL;
+SELECT * FROM table_name WHERE column_name IS NOT NULL;
+```
+
+## Combining Sorting and Filtering
+
+- **Sorting and Filtering Together**: Combines sorting and filtering in a single query.
+```sql
+SELECT column1, column2 FROM table_name WHERE condition ORDER BY column1 ASC;
+```
+
 ```
 
 This cheat sheet combines the essential concepts of SQL, including DDL, DML, DCL, constraints, joins, and logical operators, providing a comprehensive guide for quick reference.
