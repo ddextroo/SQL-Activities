@@ -1,6 +1,6 @@
 # SQL Cheat Sheet
 ## DDL (Data Definition Language)
-
+m
 
 - **CREATE**: Creates a new database object, such as a table.
  ```sql
